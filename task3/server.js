@@ -8,7 +8,7 @@ var opts = {
 http.request(opts, function(response){
 response.on('data', function(chunk){});
 response.on('end', function(){
-  res.write('status='+ response.statusCode);
+  res.write('status=:'+ response.statusCode);
   res.end();
 });
 response.on('error', function(){
