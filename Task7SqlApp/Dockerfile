@@ -5,4 +5,7 @@ ENV MYSQL_USER user
 ENV MYSQL_PASSWORD pass
 ENV MYSQL_ROOT_PASSWORD rootpass
 
-ADD ./test.sql /docker-entrypoint-initdb.d/
+COPY /test.sql /SqlTestTable/
+WORKDIR /SqlTestTable
+RUN chmod 777 test.sql
+
