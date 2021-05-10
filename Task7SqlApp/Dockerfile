@@ -5,4 +5,4 @@ ENV MYSQL_USER user
 ENV MYSQL_PASSWORD pass
 ENV MYSQL_ROOT_PASSWORD rootpass
 
-COPY test.sql /docker-entrypoint-initdb.d/
+ADD ./test.sql /docker-entrypoint-initdb.d/
