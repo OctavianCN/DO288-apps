@@ -8,9 +8,9 @@ const port = 3000
 app.get('/', (req, res) =>{
 var con = mysql.createConnection({
  host: 'task7sqlapp.task7.svc',
- user: process.env.username,
- password: process.env.password,
- database: process.env.database
+ user: process.env.USERNAME,
+ password: process.env.PASSWORD,
+ database: process.env.DATABASE
 });
 con.connect(function(err) {
  if (err) throw err;
