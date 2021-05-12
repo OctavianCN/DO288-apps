@@ -7,7 +7,7 @@ const app = express()
 const port = 3000
 app.get('/', (req, res) =>{
 var con = mysql.createConnection({
- host: 'task7sqlapp.task7.svc',
+ host: 'task7sqlapp.octavian.svc',
  user: process.env.USERNAME,
  password: process.env.PASSWORD,
  database: process.env.DATABASE
